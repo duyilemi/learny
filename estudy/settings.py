@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     "corsheaders",
+    'storages',
 ]
 
 AUTH_USER_MODEL = 'baseapp.User'
@@ -145,3 +146,14 @@ MEDIA_ROOT = BASE_DIR / 'static/images'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+AWS_ACCESS_KEY_ID = 'AKIAS556Z43FGLX4UG72'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'burberrybucket'
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+AWS_S3_REGION_NAME = 'us-east-1'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+AWS_S3_VERIFY = True
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' 
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' 
