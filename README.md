@@ -2,4 +2,7 @@
 
 http://learnyapp.herokuapp.com
 
-an instant messaging app .Users meet, discuss and learn together after joining desired rooms.
+A django project
+
+An instant messaging app .Users meet, discuss and learn together after joining desired rooms.
+
